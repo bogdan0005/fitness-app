@@ -1,0 +1,181 @@
+/* Стили для страницы профиля пользователя */
+
+.user-profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+  height: 320px; /* ← ИЗМЕНЯЕМ ЭТУ СТРОКУ */
+  overflow-y: auto; /* ← Прокрутка внутри контейнера */
+}
+
+/* Информация о пользователе */
+.user-info-section {
+  background-color: #976411;
+  border: 2px solid #ffffff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.user-full-name {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.user-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.user-detail {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+}
+
+.detail-label {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.detail-value {
+  color: #f0f0f0;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.detail-value.highlight {
+  color: #FFD700;
+  font-weight: 500;
+}
+
+.favorite-programs-section {
+  margin-top: 20px;
+}
+
+.programs-section-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.favorite-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.favorite-program-card {
+  background-color: #976411;
+  border: 2px solid #ffffff;
+  padding: 12px;
+  color: #ffffff;
+  border-radius: 0;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.program-details p {
+  font-size: 0.8rem;
+  margin: 4px 0;
+  color: #f0f0f0;
+  line-height: 1.3;
+}
+
+.program-type {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .user-details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .favorite-programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .favorite-programs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .user-full-name {
+    font-size: 1.1rem;
+  }
+  
+  .programs-section-title {
+    font-size: 1rem;
+  }
+}
+
+.user-profile-container {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.user-profile-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.user-profile-container::-webkit-scrollbar-track {
+  background: #976411;
+}
+
+.user-profile-container::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+.user-profile-container::-webkit-scrollbar-thumb:hover {
+  background: #eeeeee;
+}
+
+.no-favorites {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: rgba(151, 100, 17, 0.5);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.program-card-compact {
+  min-height: 90px;
+  padding: 10px;
+}
+
+.program-card-compact .program-name {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.program-card-compact .program-details p {
+  font-size: 0.75rem;
+  margin: 3px 0;
+}

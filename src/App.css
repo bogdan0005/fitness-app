@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #976411;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #976411;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #5E413C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #4a332f;
+}
+
+body.home-page footer .footer-top {
+  padding: 12px 5px 10px !important;
+  min-height: 80px !important;
+}
+
+body.home-page footer .footer-bottom-strip {
+  height: 70px !important;
+}
